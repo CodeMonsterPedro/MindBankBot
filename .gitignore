@@ -1,0 +1,4 @@
+config.py
+*.pyc
+__pycahe__
+.vscode
