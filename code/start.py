@@ -6,7 +6,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler()
 async def echo(message: types.Message):
-    if message.from_user.id not in config.MAIN_USER_ID:
+    if message.from_user.id not in config.WHITE_LIST:
         await message.answer('How are u? -_-')
     inputStr = message.text
     await message.answer(str(inputStr))
